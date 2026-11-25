@@ -1,0 +1,39 @@
+name: Deploy pages to prod (sandbox dry run)
+
+# Same triggers as the production pipeline; the job only reports what it would deploy.
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '*/home/**'
+      - '*/category/**'
+      - '*/landing/**'
+    branches:
+      - '*_prod'
+      - '*-prod'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-${{ github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Bind the branch to its tier
+        shell: bash
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          case "$BRANCH" in
+            *[-_]prod) tier=prod ;;
+            *[-_]dev)  tier=dev ;;
+            *) echo "::error::'$BRANCH' targets no environment"; exit 1 ;;
+          esac
+          [ "$tier" = "prod" ] || { echo "::error::the prod pipeline cannot publish '$BRANCH' to $tier"; exit 1; }
+          echo "DRY RUN: would deploy pages from $BRANCH ($GITHUB_SHA) to prod"

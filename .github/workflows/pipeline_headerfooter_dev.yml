@@ -1,0 +1,40 @@
+name: Deploy header and footer to dev (sandbox dry run)
+
+# Same triggers as the production pipeline; the job only reports what it would deploy.
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '*/header.yaml'
+      - '*/footer.yaml'
+      - '*/ui.yaml'
+      - '*/site-images/**'
+    branches:
+      - '*_dev'
+      - '*-dev'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: headerfooter-${{ github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Bind the branch to its tier
+        shell: bash
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          case "$BRANCH" in
+            *[-_]prod) tier=prod ;;
+            *[-_]dev)  tier=dev ;;
+            *) echo "::error::'$BRANCH' targets no environment"; exit 1 ;;
+          esac
+          [ "$tier" = "dev" ] || { echo "::error::the dev pipeline cannot publish '$BRANCH' to $tier"; exit 1; }
+          echo "DRY RUN: would deploy headerfooter from $BRANCH ($GITHUB_SHA) to dev"
