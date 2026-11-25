@@ -1,0 +1,15 @@
+publication:
+  OutputFilename: Pebble
+  PublicationName: Pebble
+  ProductVersion: ''
+  Language: ja-JP
+  PageType: category
+  Category: Pebble
+  Landing:
+    sections:
+      - type: breadcrumb
+      - type: hero
+        heading: Pebble
+        description: ドキュメント ポータルのテスト用ページです。実在の製品ではありません。
+      - type: categorylisting
+        filters: [product]

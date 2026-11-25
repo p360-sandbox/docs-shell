@@ -1,0 +1,7 @@
+# UI strings for ja-JP (sandbox). Missing keys fall back to en.
+action.share: 共有
+action.print: 印刷
+action.feedback: フィードバック
+action.copyLink: リンクをコピー
+callout.note: 注
+callout.tip: ヒント

@@ -1,0 +1,21 @@
+siteTitle: サンドボックス ドキュメント
+topFamilyBar:
+  - label: Example home
+    href: https://example.com/
+    target: _blank
+  - label: サンドボックス ドキュメント
+    href: /ja-JP
+    target: _self
+menu:
+  - label: Lumen
+    dropdown:
+      columns:
+        - links:
+          - label: Lumen Admin
+            href: /ja-JP/category/Lumen/
+          - label: Lumen API
+            href: /ja-JP/category/Lumen/
+  - label: Pebble
+    href: /ja-JP/category/Pebble/
+  - label: はじめに
+    href: /ja-JP/category/GettingStarted/

@@ -1,0 +1,15 @@
+publication:
+  OutputFilename: GettingStarted
+  PublicationName: はじめに
+  ProductVersion: ''
+  Language: ja-JP
+  PageType: category
+  Category: GettingStarted
+  Landing:
+    sections:
+      - type: breadcrumb
+      - type: hero
+        heading: はじめに
+        description: ドキュメント ポータルのテスト用ページです。実在の製品ではありません。
+      - type: categorylisting
+        filters: [product]

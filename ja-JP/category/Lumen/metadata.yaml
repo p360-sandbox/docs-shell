@@ -1,0 +1,15 @@
+publication:
+  OutputFilename: Lumen
+  PublicationName: Lumen
+  ProductVersion: ''
+  Language: ja-JP
+  PageType: category
+  Category: Lumen
+  Landing:
+    sections:
+      - type: breadcrumb
+      - type: hero
+        heading: Lumen
+        description: ドキュメント ポータルのテスト用ページです。実在の製品ではありません。
+      - type: categorylisting
+        filters: [product]

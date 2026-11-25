@@ -1,0 +1,15 @@
+publication:
+  OutputFilename: Pebble
+  PublicationName: Pebble
+  ProductVersion: ''
+  Language: en
+  PageType: category
+  Category: Pebble
+  Landing:
+    sections:
+      - type: breadcrumb
+      - type: hero
+        heading: Pebble
+        description: Placeholder pages for testing the docs portal. None of this describes a real product.
+      - type: categorylisting
+        filters: [product]

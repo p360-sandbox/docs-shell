@@ -1,0 +1,23 @@
+publication:
+  OutputFilename: home
+  PublicationName: サンドボックス ドキュメント
+  ProductVersion: ''
+  Language: ja-JP
+  PageType: home
+  Landing:
+    sections:
+      - type: hero
+        image: images/hero.png
+        heading: サンドボックス ドキュメント
+        description: ドキュメント ポータルのテスト用ページです。実在の製品ではありません。
+        cta: { label: ガイドを見る, href: '#docs' }
+      - type: publications
+        heading: すべてのガイド
+        filters: [contenttype, product]
+        limit: 12
+        pagination: true
+      - type: zpattern
+        image: images/card.png
+        heading: はじめに
+        description: ドキュメント ポータルのテスト用ページです。実在の製品ではありません。
+        cta: { label: ガイドを見る, href: '/ja-JP/category/GettingStarted' }

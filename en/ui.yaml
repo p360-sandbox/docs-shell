@@ -1,0 +1,7 @@
+# UI strings for en (sandbox). Missing keys fall back to en.
+action.share: Share
+action.print: Print
+action.feedback: Feedback
+action.copyLink: Copy link
+callout.note: Note
+callout.tip: Tip

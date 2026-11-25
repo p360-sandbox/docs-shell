@@ -1,0 +1,15 @@
+publication:
+  OutputFilename: Lumen
+  PublicationName: Lumen
+  ProductVersion: ''
+  Language: en
+  PageType: category
+  Category: Lumen
+  Landing:
+    sections:
+      - type: breadcrumb
+      - type: hero
+        heading: Lumen
+        description: Placeholder pages for testing the docs portal. None of this describes a real product.
+      - type: categorylisting
+        filters: [product]
