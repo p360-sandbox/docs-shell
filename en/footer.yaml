@@ -1,0 +1,18 @@
+showSocial: false
+copyright: © 2026 Example Sandbox. Placeholder content.
+columns:
+  - title: Sandbox Docs
+    group: primary
+    links:
+      - label: All guides
+        href: /
+  - title: Example
+    group: secondary
+    links:
+      - label: example.com
+        href: https://example.com/
+        newTab: true
+bottomLinks:
+  - label: Privacy (placeholder)
+    href: https://example.com/privacy
+    newTab: true

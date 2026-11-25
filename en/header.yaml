@@ -1,0 +1,21 @@
+siteTitle: Sandbox Docs
+topFamilyBar:
+  - label: Example home
+    href: https://example.com/
+    target: _blank
+  - label: Sandbox Docs
+    href: /
+    target: _self
+menu:
+  - label: Lumen
+    dropdown:
+      columns:
+        - links:
+          - label: Lumen Admin
+            href: /category/Lumen/
+          - label: Lumen API
+            href: /category/Lumen/
+  - label: Pebble
+    href: /category/Pebble/
+  - label: Getting started
+    href: /category/GettingStarted/

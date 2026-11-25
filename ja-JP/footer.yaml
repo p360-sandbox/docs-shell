@@ -1,0 +1,18 @@
+showSocial: false
+copyright: © 2026 Example Sandbox. プレースホルダーです。
+columns:
+  - title: サンドボックス ドキュメント
+    group: primary
+    links:
+      - label: すべてのガイド
+        href: /ja-JP
+  - title: Example
+    group: secondary
+    links:
+      - label: example.com
+        href: https://example.com/
+        newTab: true
+bottomLinks:
+  - label: Privacy (placeholder)
+    href: https://example.com/privacy
+    newTab: true

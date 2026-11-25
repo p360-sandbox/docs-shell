@@ -1,0 +1,18 @@
+publication:
+  OutputFilename: home
+  PublicationName: Sandbox documentation
+  ProductVersion: ''
+  Language: en
+  PageType: home
+  Landing:
+    sections:
+      - type: hero
+        image: images/hero.png
+        heading: Sandbox documentation
+        description: Placeholder pages for testing the docs portal. None of this describes a real product.
+        cta: { label: Browse guides, href: '#docs' }
+      - type: publications
+        heading: All guides
+        filters: [contenttype, product]
+        limit: 12
+        pagination: true
