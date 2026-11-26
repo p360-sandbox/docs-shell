@@ -1,4 +1,4 @@
-siteTitle: Sandbox Docs
+siteTitle: Sandbox Docs Portal Test
 topFamilyBar:
   - label: Example home
     href: https://example.com/
@@ -11,10 +11,11 @@ menu:
     dropdown:
       columns:
         - links:
-          - label: Lumen Admin
-            href: /category/Lumen/
-          - label: Lumen API
-            href: /category/Lumen/
+            - label: Lumen Admin
+              href: /category/Lumen/
+            - label: Lumen API
+              href: /category/Lumen/
+          hideTopTextCta: false
   - label: Pebble
     href: /category/Pebble/
   - label: Getting started
